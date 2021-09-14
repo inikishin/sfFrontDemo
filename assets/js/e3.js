@@ -55,3 +55,24 @@ function fn1(n1) {
 }
 
 console.log(fn1(1)(2))
+
+// Задание 4
+const inputValue1 = prompt()
+const inputValue2 = prompt()
+
+let x = inputValue1
+
+function printValue() {
+    if (x <= inputValue2) {
+        console.log(x);
+        x++;
+    }
+    else
+    {
+        clearInterval(interval);
+        console.log("That's all!")
+    }
+}
+
+let interval = setInterval(printValue, 1000);
+
