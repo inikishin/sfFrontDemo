@@ -69,3 +69,14 @@ for (i = 0; i < arr7.length; i++) {
 }
 
 console.log(res);
+
+// Задание 8
+let fruits = new Map([
+  ["apple", "green"],
+  ["strawberry", "red"],
+  ["blueberry", "blue"]
+]);
+
+for (let name of fruits.keys()) {
+  console.log(`Key: ${name}, value - ${fruits.get(name)}`);
+}
