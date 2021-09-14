@@ -48,3 +48,10 @@ function isSimpleNumber(n) {
     return condition
 }
 console.log(isSimpleNumber(-3));
+
+// Задание 3
+function fn1(n1) {
+    return function fn2(n2) {return n1+n2}
+}
+
+console.log(fn1(1)(2))
