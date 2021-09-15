@@ -57,8 +57,8 @@ function fn1(n1) {
 console.log(fn1(1)(2))
 
 // Задание 4
-const inputValue1 = prompt()
-const inputValue2 = prompt()
+let inputValue1 = prompt()
+let inputValue2 = prompt()
 
 let x = inputValue1
 
@@ -76,3 +76,10 @@ function printValue() {
 
 let interval = setInterval(printValue, 1000);
 
+// Задание 5
+inputValue1 = prompt('x')
+inputValue2 = prompt('n')
+
+const fn = (x, n) => (Math.pow(inputValue1, inputValue2));
+
+console.log(`Result - ${fn(2, 3)}`);
